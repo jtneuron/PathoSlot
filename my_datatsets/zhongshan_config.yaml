@@ -1,0 +1,15 @@
+biomarker:
+  - label_MMR
+  - label_Her2
+target_cols:
+  - label_MMR
+  - label_Her2
+  - survival_event
+  - survival_bins
+  - survival_days
+extra_cols: []  # Extra columns to copy from raw metadata to split TSVs
+metrics:                  # [新增]
+  - macro-ovr-auc
+  - macro-f1
+  - accuracy
+sample_col: slide_id       # [新增]
